@@ -68,20 +68,33 @@ class SecoundPage extends StatelessWidget {
                       SizedBox(
                         height: 40.0,
                       ),
-                      CupertinoButton(
-                        color: Colors.blue,
-                        borderRadius: BorderRadius.circular(30.0),
-                        child: Text("Login"),
-                        onPressed: () {},
-                      ),
-                      SizedBox(
-                        height: 40.0,
-                      ),
-                      CupertinoButton(
-                        color: Colors.blue,
-                        borderRadius: BorderRadius.circular(30.0),
-                        child: Text("Login"),
-                        onPressed: () {},
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          CupertinoButton(
+                            padding: EdgeInsets.symmetric(horizontal: 30.0),
+                            color: Colors.blue,
+                            borderRadius: BorderRadius.circular(30.0),
+                            child: Text(
+                              "Login",
+                              style: TextStyle(fontSize: 18.0),
+                            ),
+                            onPressed: () {},
+                          ),
+                          SizedBox(
+                            width: 30,
+                          ),
+                          CupertinoButton(
+                            padding: EdgeInsets.symmetric(horizontal: 30.0),
+                            color: Colors.red,
+                            borderRadius: BorderRadius.circular(30.0),
+                            child: Text(
+                              "Cancel",
+                              style: TextStyle(fontSize: 18.0),
+                            ),
+                            onPressed: () {},
+                          )
+                        ],
                       ),
                     ],
                   )
