@@ -1,3 +1,4 @@
+import 'package:apptracker/pages/first_page.dart';
 import 'package:apptracker/pages/secound_page.dart';
 import 'package:apptracker/pages/third_page.dart';
 import 'package:flutter/material.dart';
@@ -41,10 +42,16 @@ class _MyHomePageState extends State<MyHomePage> {
       case 1:
         child = MaterialApp(
           debugShowCheckedModeBanner: false,
-          home: SecoundPage(),
+          home: FirstPage(),
         );
         break;
       case 2:
+        child = MaterialApp(
+          debugShowCheckedModeBanner: false,
+          home: SecoundPage(),
+        );
+        break;
+      case 3:
         child = MaterialApp(
           debugShowCheckedModeBanner: false,
           home: ThirdPage(),
@@ -67,11 +74,18 @@ class _MyHomePageState extends State<MyHomePage> {
               title: Text("Home")),
           BottomNavigationBarItem(
               icon: Icon(
-                Icons.format_align_center,
+                Icons.access_alarm,
                 color: Colors.blueAccent,
                 size: 30.0,
               ),
               title: Text("Register")),
+          BottomNavigationBarItem(
+              icon: Icon(
+                Icons.format_align_center,
+                color: Colors.blueAccent,
+                size: 30.0,
+              ),
+              title: Text("Shopping")),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.shopping_cart,
